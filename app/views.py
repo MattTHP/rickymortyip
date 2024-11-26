@@ -4,6 +4,9 @@ from django.shortcuts import redirect, render
 from .layers.services import services
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
+from django.core.paginator import Paginator
+from django.shortcuts import render
+from app.layers.persistence import repositories
 
 def index_page(request):
     return render(request, 'index.html')

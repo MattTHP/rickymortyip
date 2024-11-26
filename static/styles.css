@@ -140,25 +140,3 @@ table.table td i {
     margin-top: 6px;
     font-size: 95%;
 }
-
-.border-alive {
-    border-color: green;
-    border-width: 2px;
-    border-style: solid;
-}
-
-.border-dead {
-    border-color: rgb(211, 20, 20);
-    border-width: 2px;
-    border-style: solid;
-}
-
-.border-unknown {
-    border-color: orange;
-    border-width: 2px;
-    border-style: solid;
-}
-
-body {
-    background-color: lightblue;
-}
