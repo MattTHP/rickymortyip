@@ -17,17 +17,8 @@ def home(request, page=1):
     
     favourite_list=services.getAllFavourites(request)
     
-    paginator=Paginator(images,per_page=20)
-    
-    page_object=paginator.get_page(page)
-    
-    muestra={
-        'page_object':page_object,
-        'images':images,
-        'favourite_list':favourite_list,
-    }
-    
-    return render(request, 'home.html',muestra)
+   
+    return render(request, 'home.html', {'images': images, 'favourite_list': favourite_list })
 
 def search(request):
     search_msg = request.POST.get('query', '')
